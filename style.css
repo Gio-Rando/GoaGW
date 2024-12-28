@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Doto:wght@100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Lexend+Deca:wght@100..900&family=Lobster&family=Outfit:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+
+*{  
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family: "Pixelify Sans", serif;
+    text-decoration: none;
+    scroll-behavior: smooth;    
+}
+
+body{
+    background: url(./images/pastel-color-paper-geometric-flat-lay-background.jpg);
+    background-size: cover;
+
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    transition: 0.3s;
+}
+  
+::-webkit-scrollbar-track {
+background:rgb(25, 80, 15);
+box-shadow:inset 0 0 5px rgb(0, 16, 0);
+transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb {
+background: lime;
+transition: 0.3s;
+border-radius: 10px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+background:rgb(0, 155, 0) ;
+
+}
+
+.navigator{
+    position: fixed;
+    padding: 0px;
+    border-radius: 100%;
+    background-color: rgb(0, 55, 0);
+    z-index: 2;
+    padding: 10px;
+    bottom: 20px;
+    right: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.navigator img{
+    width: 50px;
+}
+
+.navigator:hover{
+    background-color: rgb(0, 155, 0);
+}
+
+header{
+background:linear-gradient(rgb(0, 80, 0) , rgb(0, 160, 0));
+box-shadow: 0px 5px 20px rgb(0, 230, 0);
+position: sticky;
+border-radius: 0 0 20px 20px;
+}
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hr{
+    border-top:5px solid lime;
+    border-radius: 10px;
+    margin: 50px ;
+    box-shadow: 0px 0px 10px lime;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.header h1{
+    font-size: 60px;
+    color: white;
+    background-color: rgb(0, 16, 0);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Doto", serif;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 15px rgb(0, 80, 0);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a{
+    font-size: 25px;
+    color: rgb(0, 16, 0);
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    transform: scale(1.2);
+    color: lime;
+}
+
+.back {
+    background: url(/images/FGG.jpg) ;
+    background-size: cover;
+    padding: 100px;
+
+    box-shadow: 0px 0px 50px rgb(0, 90, 0);
+}
+
+.first{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.upper img{
+    width: 600px;
+    border: 10px rgb(0, 40, 0) solid;
+    box-shadow: 0px 0px 20px rgb(0, 100, 0);
+    border-radius: 10px;
+}
+
+.up{
+   display: flex;
+   flex-direction: column;
+   width: 500px;
+   gap: 20px; 
+}
+
+.up p , h2{
+    color: lime;
+
+
+}
+
+.up h1{
+    font-size: 60px;
+    color: white;
+}
+
+.up button{
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(0, 16, 0);
+    font-size: 20px;
+    font-weight: 700;
+    color: lime;
+    margin-top: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.up button:hover{
+    color: rgb(0, 16, 0);
+    background-color: lime;
+}
+
+.cards{
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.card{
+    width: 350px;    
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: rgb(0, 40, 0) 5px solid;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgb(0, 160, 0);
+}
+
+
+.card div{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.card img{
+    filter: drop-shadow(0px 0px 15px lime);
+}
+
+.card h1{
+    color: rgb(255, 255, 255);
+}
+
+.card p{
+    color: rgba(255, 255, 255, 0.5);
+}
+.second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 80px;
+}
+
+.second h1{
+    color: white;
+    text-shadow: 0px 0px 10px lime;
+    font-size: 60px;
+}
+
+.stairs {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+   height: 260px;
+}
+
+.stairs div {
+    background-color: rgb(0, 0, 0);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 10px 0 0 ;
+    border: solid rgb(0, 40, 0) 2px;
+    font-size: 20px;
+    width: 100px;
+
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-box {
+    width: max-content;
+    border-radius: 100%;
+    padding: 5px 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+#oao:checked ~ .checkbox-box img{
+    filter: drop-shadow(0px 0px 10px white)
+}
+    
+#oao:checked ~ .checkbox-box {
+    background-color: lime;
+    box-shadow: 0px 0px 20px lime;
+}
+
+#oao:not(:checked) ~ .checkbox-box {
+    background-color: green;
+}
+
+#oao:checked ~ .one {
+    background-color: lime;
+    box-shadow: 0px 0px 20px green;
+    color: white;
+    text-shadow: 0px 0px 10px white;
+    animation: why 2s;
+    animation-fill-mode: both;
+    border: rgb(200, 255, 200) 2px solid
+}
+
+#oao:checked ~ .two {
+    animation: why 2s;
+    animation-fill-mode: both;
+    background-color: lime;
+    box-shadow: 0px 0px 20px green;
+    color: white;
+    text-shadow: 0px 0px 10px white;
+    border: rgb(200, 255, 200) 2px solid
+}
+
+#oao:checked ~ .three {
+    animation: why 2s;
+    animation-fill-mode: both;
+    background-color: lime;
+    box-shadow: 0px 0px 20px green;
+    color: white;
+    text-shadow: 0px 0px 10px white;
+    border: rgb(200, 255, 200) 2px solid
+}
+
+#oao:checked ~ .four {
+    animation: why 2s;
+    animation-fill-mode: both;
+    background-color: lime;
+    box-shadow: 0px 0px 20px green;
+    color: white;
+    text-shadow: 0px 0px 10px white;
+    border: rgb(200, 255, 200) 2px solid
+}
+
+#oao:checked ~ .five {
+    animation: why 2s;
+    animation-fill-mode: both;
+    background-color: lime;
+    box-shadow: 0px 0px 20px green;
+    color: white;
+    text-shadow: 0px 0px 10px white;
+    border: rgb(200, 255, 200) 2px solid
+}
+
+#oao:checked ~ .six {
+    animation: why 2s;
+    animation-fill-mode: both;
+    background-color: lime;
+    box-shadow: 0px 0px 20px green;
+    color: white;
+    text-shadow: 0px 0px 10px white;
+    border: rgb(200, 255, 200) 2px solid
+}
+
+#oao:not(:checked) ~ .one {
+    animation: cry 2s;
+    animation-fill-mode: both;
+}
+
+#oao:not(:checked) ~ .two {
+    animation: cry 2s;
+    animation-fill-mode: both;
+}
+
+#oao:not(:checked) ~ .three {
+    animation:cry 2s;
+    animation-fill-mode: both;
+}
+
+#oao:not(:checked) ~ .four {
+    animation: cry 2s;
+    animation-fill-mode: both;
+}
+
+#oao:not(:checked) ~ .five {
+    animation: cry 2s;
+    animation-fill-mode: both;
+}
+
+#oao:not(:checked) ~ .six {
+    animation: cry 2s;
+    animation-fill-mode: both;
+}
+
+
+.one {
+    height: 60px;
+    
+}
+
+.two {
+    height:100px;
+}
+
+.three {
+    height: 140px;
+}
+
+.four {
+    height: 180px;
+}
+
+.five {
+    height: 220px;
+}
+
+.six {
+    height: 260px;
+}
+
+@keyframes why{
+    0%{height: 27.2px;}
+    100%{max-height: 100%;}
+}
+
+@keyframes cry{
+    100%{height: 27.2px;}
+    0%{max-height: 100%;}   
+}
+
+
+.third{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.third h1{
+    color: white;
+    text-shadow: 0px 0px 10px lime;
+    font-size: 40px;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.video img{
+    width: 600px;
+}
+
+.sha{
+    filter: drop-shadow(0px 0px 20px rgb(0, 230, 0) );
+    padding: 30px;
+}
+.oi {
+    border-top: 10px solid rgb(0, 100, 0);
+    border-left: 10px solid rgb(0, 100, 0);
+    border-bottom: 10px solid rgb(0, 100, 0);
+    border-radius: 20px 0px 0px 20px;
+    
+}
+
+.ti{
+    border-top: 10px solid rgb(0, 100, 0);
+    border-right: 10px solid rgb(0, 100, 0);
+    border-bottom: 10px solid rgb(0, 100, 0);
+    border-radius: 0 20px 20px 0px;
+    
+}
+
+video{
+    border: 10px solid rgb(0, 100, 0);
+    border-radius: 20px 20px 0 0;
+    z-index: 1;
+}
+
+.pur{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.pur h1{
+    color: white;
+    text-shadow: 0px 0px 10px lime;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.prices{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.price {
+    background-color: rgb(0, 60, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding-top: 40px;
+    border-radius: 5px 5px 10px 10px;
+    border-top: 10px solid lime;
+    transition: 0.3s;
+    padding-bottom: 20px;
+}
+
+.lower{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.price h2{
+    background-color: rgb(0, 16, 0);
+    padding: 10px;
+}
+
+.price h1{
+    color: white;
+    font-size: 50px;
+}
+
+.price p{
+    color: white;
+    font-size: 20px;
+}
+
+span{
+    font-size: 35px;
+}
+
+.price:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 0px 15px rgb(83, 255, 56);
+
+}
+
+.price button {
+    width: max-content;
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(0, 16, 0);
+    font-size: 20px;
+    font-weight: 700;
+    color: lime;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.price button:hover{
+    color: rgb(0, 16, 0);
+    background-color: lime;
+    box-shadow: 0 0 20px lime;
+    transform: scale(1.1)
+}
+
+.price:hover button {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    50% {transform: scale(1.1);}
+}
+
+.nav{
+    display: flex;
+    gap: 25px;
+}
+
+.nav a{
+    font-size: 25px;
+    color: rgb(0, 16, 0);
+    transition: 0.3s;
+}
+
+.nav a:hover{
+    color: lime;
+
+}
+
+footer{
+    background:linear-gradient( rgb(0, 160, 0) , rgb(0, 80, 0));
+    box-shadow: 0px -5px 20px rgb(0, 230, 0);
+    position: sticky;
+    border-radius: 20px 20px 0 0;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    padding: 20px;
+}
+
+.footer h1{
+    color: white;
+    text-shadow: 0px 0px 10px lime;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.footer img{
+    padding: 0px;
+    transition: 0.3s;
+}
+
+.footer img:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 20px lime);
+}
