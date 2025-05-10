@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Doto:wght@100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Lexend+Deca:wght@100..900&family=Lobster&family=Outfit:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Pixelify Sans", serif;
+}
+
+body {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: url(./images/FGG.jpg);
+background-size: cover;
+background-position: center;
+}
+
+.entire{
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 40px;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: inset 0px 0px 10px lime, 0px 0px 10px lime;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    text-shadow: 0px 0px 30px lime;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+input {
+    width: 250px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    font-size: 20px;
+    padding: 1px 0 0 10px;
+    transition: 0.2s;
+    background-color: #eeeeee;
+    color: lime;
+    font-weight: 700;
+}
+
+.button {
+    background-color: #ffffff;
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    font-size: medium;
+    font-weight: 700;
+    border: none;
+    transition: 0.2s;
+    color: lime;
+    cursor: pointer;
+}
+
+input::placeholder {
+    font-size: 20px;
+    color: rgba(0, 255, 0, 0.5);
+    font-weight: 700;
+   }
+   
+   input:focus {
+       background-color: #ffffff;
+       box-shadow: lime 0px 0px 25px;
+       border: none;
+       outline: none;
+   }
+   
+   .button:hover {
+       background-color: lime;
+       color: #ffffff;
+       box-shadow: lime 0px 0px 25px;
+       border: none;
+       outline: none;
+   }
+
+p{
+    font-size: large;
+    color: white;
+    cursor: pointer;
+}
+
+#inv{
+    display: none;
+}

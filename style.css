@@ -284,7 +284,7 @@ input[type="checkbox"] {
     background-color: green;
 }
 
-#oao:checked ~ .one {
+#oao:checked ~ .i {
     background-color: lime;
     box-shadow: 0px 0px 20px green;
     color: white;
@@ -294,83 +294,10 @@ input[type="checkbox"] {
     border: rgb(200, 255, 200) 2px solid
 }
 
-#oao:checked ~ .two {
-    animation: why 2s;
-    animation-fill-mode: both;
-    background-color: lime;
-    box-shadow: 0px 0px 20px green;
-    color: white;
-    text-shadow: 0px 0px 10px white;
-    border: rgb(200, 255, 200) 2px solid
-}
 
-#oao:checked ~ .three {
-    animation: why 2s;
-    animation-fill-mode: both;
-    background-color: lime;
-    box-shadow: 0px 0px 20px green;
-    color: white;
-    text-shadow: 0px 0px 10px white;
-    border: rgb(200, 255, 200) 2px solid
-}
-
-#oao:checked ~ .four {
-    animation: why 2s;
-    animation-fill-mode: both;
-    background-color: lime;
-    box-shadow: 0px 0px 20px green;
-    color: white;
-    text-shadow: 0px 0px 10px white;
-    border: rgb(200, 255, 200) 2px solid
-}
-
-#oao:checked ~ .five {
-    animation: why 2s;
-    animation-fill-mode: both;
-    background-color: lime;
-    box-shadow: 0px 0px 20px green;
-    color: white;
-    text-shadow: 0px 0px 10px white;
-    border: rgb(200, 255, 200) 2px solid
-}
-
-#oao:checked ~ .six {
-    animation: why 2s;
-    animation-fill-mode: both;
-    background-color: lime;
-    box-shadow: 0px 0px 20px green;
-    color: white;
-    text-shadow: 0px 0px 10px white;
-    border: rgb(200, 255, 200) 2px solid
-}
-
-#oao:not(:checked) ~ .one {
+#oao:not(:checked) ~ .i {
     animation: wha 2s;
     animation-fill-mode: both;
-}
-
-#oao:not(:checked) ~ .two {
-    animation: wha 2s;
-    animation-fill-mode: both;
-}
-
-#oao:not(:checked) ~ .three {
-    animation:wha 2s;
-    animation-fill-mode: both;
-}
-
-#oao:not(:checked) ~ .four {
-    animation: wha 2s;
-    animation-fill-mode: both;
-}
-
-#oao:not(:checked) ~ .five {
-    animation: wha 2s;
-    animation-fill-mode: both;
-}
-
-#oao:not(:checked) ~ .six {
-    animation: wha 2s;
     animation-fill-mode: both;
 }
 
@@ -604,4 +531,45 @@ footer{
 .footer img:hover{
     transform: scale(1.1);
     filter: drop-shadow(0px 0px 20px lime);
+}
+
+.user-profile{
+    display: flex;
+    align-items: center;
+
+}
+
+.avatar-img{
+    width:50px;
+    border-radius: 100%;
+    border: 3px black solid;
+}
+
+#username{
+    font-size: 30px;
+    padding: 5px;
+    border: 3px lime solid;
+    border-radius: 5px;
+    background-color: rgb(0, 60, 0);
+    box-shadow: lime 0 0 5px;;
+    color: lime;
+    text-shadow: lime 0 0 5px;
+}
+
+i{
+    font-size: 35px;
+    padding: 5px;
+    border: 3px black solid;
+    border-radius: 5px;
+    background-color: rgb(0, 60, 0);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+i:hover{
+    box-shadow: lime 0 0 5px;;
+    color: lime;
+    text-shadow: lime 0 0 5px;
+    background-color: rgb(0, 120, 0);
+    border: 3px lime solid;
 }
