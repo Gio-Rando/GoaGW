@@ -44,19 +44,19 @@ form[1].addEventListener("submit",(e)=>{
     const email = form[1].email.value
     const password = form[1].pass.value
     for(let i of users){
-        console.log(i)
-        if (email != i.email || password != i.password){
-            h3[1].style.display = "block"
-        }
-        else{
+        if (email == i.email && password == i.password){
             const name = i.name
             const lastName = i.lastName
             localStorage.setItem("currentUser", JSON.stringify({ name, lastName }));
             localStorage.setItem("online", JSON.stringify(true))
             h3[1].style.display = "none"    
-            console.log(users)
             form[1].reset();
             window.location.href ="./index.html"
+        }
+        else{
+            console.log(i.email, i.password, email, password)
+            console.clear()
+            h3[1].style.display = "block"
         }
 
     }
